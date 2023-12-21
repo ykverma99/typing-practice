@@ -1,4 +1,4 @@
-// alphabet which i show to the user 
+// alphabet which i show to the user
 let alphabets = [
   "a",
   "b",
@@ -90,13 +90,13 @@ function keyDownHandler(e) {
   currentText++;
 }
 
-// function for keyUp 
+// function for keyUp
 
 function keyUpHandler(e) {
   if (findKey(e.key)) {
     keyUpStyle(e.key);
-    if(currentText >= word.length){
-        document.location.reload()
+    if (currentText >= word.length) {
+      document.location.reload();
     }
   }
 }
@@ -118,9 +118,9 @@ function keyUpStyle(key) {
     character = document.getElementById("spacebar");
   } else {
     character = document.getElementById(`${key}`);
-    character.style.color = "#fff";
-    character.style.background = "rgba(70, 80, 109, 0.678)";
   }
+  character.style.color = "#fff";
+  character.style.background = "rgba(70, 80, 109, 0.678)";
 }
 
 function keyDownStyle(key) {
@@ -128,7 +128,7 @@ function keyDownStyle(key) {
     character = document.getElementById("spacebar");
   } else {
     character = document.getElementById(`${key}`);
-    character.style.color = "#000";
-    character.style.background = "#fff";
   }
+  character.style.color = "#000";
+  character.style.background = "#fff";
 }

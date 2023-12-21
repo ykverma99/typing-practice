@@ -18,7 +18,9 @@
     display: flex;
     align-items: center;
     width: 25vw;
+    height: 7vh;
     justify-content: space-around;
+    border-radius: 5px;
 }
 .option-txt{
     display: flex;
@@ -37,6 +39,8 @@
     font-weight: lighter;
     word-spacing: 10px;
     letter-spacing: 3px;
+    border-radius: 5px;
+    box-shadow: 0 0 14px rgba(102, 128, 212, 0.788);
 }
 .keyboard{
     display: flex;
